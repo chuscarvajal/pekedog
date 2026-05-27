@@ -126,6 +126,8 @@ h1,h2,h3,h4 { font-family: var(--font-display); line-height: 1.15; }
 .nav-link:hover::after { transform: scaleX(1); transform-origin: left; }
 .nav-phone { font-family: var(--font-body); font-size: 0.9rem; font-weight: 700; color: var(--color-primary); }
 [data-theme="dark"] .nav-phone { color: var(--color-accent); }
+.nav-social { display: flex; align-items: center; color: var(--text-secondary); transition: color 0.2s; }
+.nav-social:hover { color: var(--color-accent); }
 .nav-actions { display: flex; align-items: center; gap: 12px; }
 .theme-toggle {
   width: 38px; height: 38px; border-radius: 50%;
