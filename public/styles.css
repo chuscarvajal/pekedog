@@ -3,19 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Nunito:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-primary:   #3a6b58;
-  --color-primary-d: #2c5243;
-  --color-accent:    #e07d56;
-  --color-accent-d:  #c66540;
+  --color-primary:   #5c2d0a;
+  --color-primary-d: #451f06;
+  --color-accent:    #d4672a;
+  --color-accent-d:  #b8531e;
 
   --bg-primary:   #faf8f5;
   --bg-secondary: #f0ede7;
   --bg-card:      #ffffff;
-  --bg-dark:      #1e2d27;
+  --bg-dark:      #1e1008;
 
-  --text-primary:   #1e2d27;
-  --text-secondary: #4a5e55;
-  --text-muted:     #8a9e94;
+  --text-primary:   #1e0e04;
+  --text-secondary: #5a3c28;
+  --text-muted:     #9a7a64;
   --text-on-dark:   #faf8f5;
 
   --radius-sm:  8px;
@@ -34,12 +34,12 @@
 }
 
 [data-theme="dark"] {
-  --bg-primary:   #1e2d27;
-  --bg-secondary: #243429;
-  --bg-card:      #2b3e34;
+  --bg-primary:   #1e0e04;
+  --bg-secondary: #2a1508;
+  --bg-card:      #341c0c;
   --text-primary:   #faf8f5;
-  --text-secondary: #a8c0b4;
-  --text-muted:     #5a7a6e;
+  --text-secondary: #c4a890;
+  --text-muted:     #7a5a44;
   --shadow-sm:  0 2px 8px rgba(0,0,0,0.3);
   --shadow-md:  0 6px 24px rgba(0,0,0,0.4);
   --shadow-lg:  0 16px 48px rgba(0,0,0,0.5);
@@ -109,7 +109,8 @@ h1,h2,h3,h4 { font-family: var(--font-display); line-height: 1.15; }
 }
 .navbar.scrolled { background: var(--bg-primary); box-shadow: var(--shadow-sm); padding: 12px 0; }
 .nav-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
-.nav-logo { font-family: var(--font-display); font-weight: 800; font-size: 1.2rem; color: var(--text-primary); letter-spacing: -0.01em; }
+.nav-logo { display: flex; align-items: center; }
+.nav-logo img { height: 44px; width: auto; object-fit: contain; }
 .nav-logo span { color: var(--color-accent); }
 .nav-menu { display: flex; align-items: center; gap: 28px; list-style: none; }
 .nav-link {
